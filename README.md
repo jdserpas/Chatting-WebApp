@@ -1,8 +1,9 @@
-# Chatting-WebApp :alien: :speech_balloon: #
-#### For Practicing Fundamentals ####
-
-<i> "A journey of a thousand miles begins with a single step" </i>
+# Chatting-WebApp :alien::speech_balloon: #
+### For Practicing Fundamentals ###
+<br/>
+<i> "A journey of a thousand miles begins with a single step" </i><br/>
 <i>     -Lao Tzu    </i>
+<br/>
 
 ## What this Repository is for you :monocle_face: ##
 
@@ -14,11 +15,11 @@
 
 This repository is meant as a public repository into which I'm publishing my personal journy through learning back-end systems using the Java language. This is the first project that I feel confident enough to develop publicly for future eyes that are curious enough to explore.
 
-## Scope of this Project ##
+## Scope of this Project :robot: ##
 
 This project is meant to be an online webapp for internet chatting. The idea is to have a primary page in which users can type in their name, and then develop a chatting system using websockets as the primary technology. The idea of using JSP as the front end templating engine is simply because it's such a popular technology and there are many projects still using it. I will also be using a logging framework to keep track of important information. Lastly, and most importantly, this application will be developed, tested, and ran on <b>Apache Tomcat 9.0</b>. A simple web container like Tomcat will be enough to handle the small scope of this project.
 
-#### Technologies that should be used: 	:robot: ####
+#### Technologies that should be used: ####
 <ul>
     <li>Java Servlets</li>
     <li>JSP for front end compiling</li>

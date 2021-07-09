@@ -12,9 +12,9 @@
             <url-pattern>*.jspf</url-pattern>
             <page-encoding>UTF-8</page-encoding>
             <scripting-invalid>true</scripting-invalid>
-            <!--TODO: <include-prelude> Add the prelude </include-prelude> -->
+            <include-prelude>/WEB-INF/jsp/imports.jspf</include-prelude>
             <trim-directive-whitespaces>true</trim-directive-whitespaces>
-            <default-content-type>tex/html</default-content-type>
+            <default-content-type>text/html</default-content-type>
         </jsp-property-group>
     </jsp-config>
 

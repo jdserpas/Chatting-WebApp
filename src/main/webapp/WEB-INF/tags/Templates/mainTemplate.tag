@@ -20,6 +20,14 @@
     </head>
     <body>
         <jsp:doBody/>
+        <!--    Footer    -->
+        <footer class="footer mt-auto py-3 text-light bg-dark" style="position:absolute; width:100%; bottom:0px;">
+            <div class="container">
+                <div class="row-cols-1 end"
+                <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+        </footer>
+        <!--    Footer    -->
         <!--Bootstrap JS dependencies -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -6,8 +6,10 @@
               required="true" %>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a href="#" class="navbar-brand">
-        <!--TODO: Add support for "Timmy" icons-->
-        <img src="#" alt="Timmy" height="50px" width="50px">
+        <img src="${pageContext.request.contextPath}/resources/icons/015-bot.svg"
+             alt="Timmy"
+             height="50px"
+             width="50px">
     </a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu"
             aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">

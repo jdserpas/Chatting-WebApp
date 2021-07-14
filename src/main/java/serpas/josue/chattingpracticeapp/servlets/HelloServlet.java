@@ -17,7 +17,7 @@ public class HelloServlet extends HttpServlet {
         menuItems.add("About Us");
 
         request.setAttribute("menuItems", menuItems);
-        request.getRequestDispatcher("/WEB-INF/jsp/view/registerPage.jsp")
+        request.getRequestDispatcher("/WEB-INF/jsp/view/landingPage.jsp")
                 .forward(request, response);
     }
 

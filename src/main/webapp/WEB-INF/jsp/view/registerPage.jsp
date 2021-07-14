@@ -12,7 +12,6 @@
             <div class="row justify-content-center">
                 <h1 class="col-auto">WELCOME!</h1>
             </div>
-            <!--TODO: add POST implementation-->
             <form action="<c:url value="/register" />"
                   method="POST"
                   novalidate>

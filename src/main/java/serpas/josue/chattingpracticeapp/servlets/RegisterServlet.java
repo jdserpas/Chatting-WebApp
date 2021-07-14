@@ -35,7 +35,6 @@ public class RegisterServlet extends HttpServlet {
         String username = request.getParameter("username");
         String view;
 
-        //TODO: post requests still don't redirect. Fix.
         if(username != null && !username.trim().isEmpty()) {
             request.getSession().setAttribute("username", username);
             view = "landingPage";

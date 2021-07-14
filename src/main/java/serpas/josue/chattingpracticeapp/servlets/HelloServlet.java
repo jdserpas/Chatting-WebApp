@@ -1,4 +1,4 @@
-package serpas.josue.chattingpracticeapp;
+package serpas.josue.chattingpracticeapp.servlets;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class HelloServlet extends HttpServlet {
         menuItems.add("About Us");
 
         request.setAttribute("menuItems", menuItems);
-        request.getRequestDispatcher("/WEB-INF/jsp/view/landingPage.jsp")
+        request.getRequestDispatcher("/WEB-INF/jsp/view/registerPage.jsp")
                 .forward(request, response);
     }
 

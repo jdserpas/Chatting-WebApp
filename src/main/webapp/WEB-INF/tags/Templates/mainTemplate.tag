@@ -4,10 +4,10 @@
         isELIgnored="false" %>
 <%@attribute name="headerTitle" required="true" rtexprvalue="true"
              type="java.lang.String" %>
-<%@attribute name="extraHeaders" required="false" fragment="true"
+<%@attribute name="extraHeaders" fragment="true" required="false"
              description="Optional value to allow extention of HTML head content.
              (Such as CSS stylesheets)" %>
-<%@attribute name="extraScripts" required="false" fragment="true"
+<%@attribute name="extraScripts" fragment="true" required="false"
              description="Optional value to include extra javascript files." %>
 <!DOCTYPE html>
 <html>
@@ -24,6 +24,7 @@
     <body>
         <jsp:doBody/>
         <!--    Footer    -->
+        <!--TODO: Footer needs to be formatted for mobile-->
         <footer class="footer mt-auto py-3 text-light bg-dark" style="position:absolute; width:100%; bottom:0px;">
             <div class="container">
                 <div class="row">

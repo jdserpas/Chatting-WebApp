@@ -1,4 +1,4 @@
-package serpas.josue.chattingpracticeapp;
+package serpas.josue.chattingpracticeapp.servlets;
 
 import java.io.*;
 import java.util.ArrayList;

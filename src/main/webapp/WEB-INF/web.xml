@@ -37,4 +37,20 @@
         <filter-name>validationFilter</filter-name>
         <url-pattern>/hello-servlet</url-pattern>
     </filter-mapping>
+
+    <filter>
+        <description>A Filter meant to log every request coming in</description>
+        <filter-name>RequestLogger</filter-name>
+        <filter-class>serpas.josue.chattingpracticeapp.filters.RequestLogger</filter-class>
+        <async-supported>true</async-supported>
+    </filter>
+    <filter-mapping>
+        <filter-name>RequestLogger</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <context-param>
+        <param-name>log4jConfiguration</param-name>
+        <param-value>log4j2.xml</param-value>
+    </context-param>
 </web-app>

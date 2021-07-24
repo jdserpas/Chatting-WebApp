@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Configuration status="WARN">
+<Configuration status="WARNING">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy-MM-dd@HH:mm:ss:SSSS} %p : [%C:%L] %m%n" />
         </Console>
-        <RollingFile name="Generic" fileName="logs/generic.log"
-                     filePattern="logs/generic-%i.log">
+        <RollingFile name="Generic"
+                     fileName="${env:CATALINA_HOME}\logs\chatting-app\generic.log"
+                     filePattern="${env:CATALINA_HOME}\logs\chatting-app\generic-%i.log">
             <PatternLayout>
                 <Pattern>%d{yyyy-MM-dd@HH:mm:ss:SSSS} %p : [%C:%L] %m%n</Pattern>
             </PatternLayout>
@@ -15,10 +16,11 @@
             <DefaultRolloverStrategy max="4" />
         </RollingFile>
         <RollingFile name="Requests"
-                     fileName="C:\Program Files\Apache Software Foundation\apache-tomcat-9.0.41\logs\requests.log"
-                     filePattern="C:\Program Files\Apache Software Foundation\apache-tomcat-9.0.41\logs\requests-%d{yy_MM_dd}-%i.log">
+                     fileName="${env:CATALINA_HOME}\logs\chatting-app\requests.log"
+                     filePattern="${env:CATALINA_HOME}\logs\chatting-app\requests-%d{yy_MM_dd}-%i.log">
             <PatternLayout>
-                <Pattern>%d{yyyy-MM-dd@HH:mm:ss:SSSS} %m : METHOD %X{method}. URI: %X{uri}%n</Pattern>
+                <Pattern>%d{yyyy-MM-dd@HH:mm:ss:SSSS} %m -- [METHOD :
+                    %X{method}] URI: %X{uri}%n</Pattern>
             </PatternLayout>
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1" modulate="true" />

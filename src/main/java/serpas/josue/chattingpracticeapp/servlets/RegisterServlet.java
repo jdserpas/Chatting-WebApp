@@ -20,8 +20,7 @@ public class RegisterServlet extends HttpServlet {
         String view = "registerPage";
 
         if(request.getSession().getAttribute("username") != null) {
-            request.setAttribute("failedRegister", false);
-            view = "landingPage.jsp";
+            response.sendRedirect("home");
         }
 
         request.getRequestDispatcher("/WEB-INF/jsp/view/" + view + ".jsp")
@@ -37,7 +36,8 @@ public class RegisterServlet extends HttpServlet {
 
         if(username != null && !username.trim().isEmpty()) {
             request.getSession().setAttribute("username", username);
-            view = "landingPage";
+            response.sendRedirect("home");
+            return;
         }
         else {
             request.setAttribute("failedRegister", true);

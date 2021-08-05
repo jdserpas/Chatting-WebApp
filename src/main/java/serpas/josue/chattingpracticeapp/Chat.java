@@ -6,27 +6,29 @@ import java.util.Map;
 public class Chat {
 
     private String chatId;
-    private boolean isPublic;
+    private boolean publicChat;
     private Map<String, User> users = new HashMap<>();
 
     //Chats are public by default unless otherwise specified
     public Chat(String chatId) {
         this.chatId = chatId;
-        this.isPublic = true;
+        this.publicChat = true;
     }
 
     public Chat(String chatId, boolean isPublic) {
         this.chatId = chatId;
-        this.isPublic = isPublic;
+        this.publicChat = isPublic;
     }
 
     public String getChatId() {
         return chatId;
     }
 
-    public boolean isPublic() {
-        return isPublic;
+    public boolean isPublicChat() {
+        return publicChat;
     }
+
+    public int getParticipantAmount() { return users.size();}
 
     public void joinChat(User user) {
         users.put(user.getUsername(), user);

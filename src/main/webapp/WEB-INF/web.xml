@@ -30,7 +30,7 @@
         <description>A filter meant to ensure that the user is
             registered in the page</description>
         <filter-name>validationFilter</filter-name>
-        <filter-class>serpas.josue.chattingpracticeapp.filters.validationFilter</filter-class>
+        <filter-class>serpas.josue.chattingpracticeapp.filters.ValidationFilter</filter-class>
         <async-supported>true</async-supported>
     </filter>
     <filter-mapping>

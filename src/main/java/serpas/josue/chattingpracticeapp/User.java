@@ -20,6 +20,8 @@ public class User {
         return userChats.get(chatId);
     }
 
+    public Map<String, Chat> getUserChats() { return userChats; }
+
     public void joinChat(Chat chat) {
         userChats.put(chat.getChatId(), chat);
         chat.joinChat(this);

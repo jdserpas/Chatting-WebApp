@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class validationFilter implements Filter {
+public class ValidationFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request,

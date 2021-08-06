@@ -19,6 +19,7 @@
         <ul class="navbar-nav">
             <c:forEach items="${menuItems}" var="item">
                 <li class="nav-item">
+                    <%--TODO: add navbar navigation--%>
                     <a href="#" class="nav-link">${item}</a>
                 </li>
             </c:forEach>

@@ -16,7 +16,10 @@ type="java.util.Map<java.lang.String, serpas.josue.chattingpracticeapp.Chat>"--%
                 <h1 class="col-auto text-white">Welcome ${username}</h1>
             </div>
             <div class="row justify-content-center my-2">
-                <a href="#" class="col-auto btn btn-dark">Start a chat</a>
+                <a href="<c:url value="/home">
+                            <c:param name="page" value="startChat"/>
+                         </c:url>"
+                   class="col-auto btn btn-dark">Start a chat</a>
                 <a href="#" class="col-auto btn btn-dark offset-md-1">Join a public chat</a>
                 <a href="#" class="col-auto btn btn-dark offset-md-1">Join a private chat</a>
             </div>

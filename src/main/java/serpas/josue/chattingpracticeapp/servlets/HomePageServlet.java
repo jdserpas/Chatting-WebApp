@@ -30,11 +30,14 @@ public class HomePageServlet extends HttpServlet {
             page = "home";
 
         switch(page) {
-            case "privateChat":
+            case "startChat":
                 createChat(request, response, false);
                 break;
             case "publicChat":
-                createChat(request, response, true);
+
+                break;
+            case "privateChat":
+                //TODO: add websocket implementation
                 break;
             default:
                 goToHome(request, response);
@@ -44,8 +47,13 @@ public class HomePageServlet extends HttpServlet {
 
     //redirects to create chat form specifying if it will be a public chat
     private void createChat(HttpServletRequest request,
-                            HttpServletResponse response, boolean isPublic) {
+                            HttpServletResponse response, boolean isPublic)
+            throws ServletException ,IOException {
+        List<String> navLinks = Arrays.asList("Home", "About");
+        request.setAttribute("navLinks", navLinks);
 
+        request.getRequestDispatcher("/WEB-INF/jsp/view/createChat.jsp")
+                .forward(request, response);
     }
 
     private void goToHome(HttpServletRequest request,
